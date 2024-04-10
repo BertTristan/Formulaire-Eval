@@ -1,0 +1,62 @@
+:root{
+    --green-color: #C9CBA3;
+    --yellow-color: #FFE1A8;
+    --red-color: #E26D5C;
+}
+
+
+body{
+    background-color: var(--green-color);
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: large;
+}
+
+form{
+    height: 100%;
+    background-color: var(--yellow-color);
+    width: 100%;
+	max-width: 330px;
+	margin: auto;
+    padding:15px;
+
+}
+
+#formulaire-div input{
+    margin-left: 50%;
+    transform: translateX(-50%); 
+}
+label, .error{
+    display: block;
+    text-align: center;
+}
+span{
+    color: var(--red-color);
+}
+
+fieldset{
+    border-color: var(--red-color);
+}
+
+
+.button{
+    background-color: var(--green-color);
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
+    transition: 1s;
+}
+
+.button:hover{
+    background-color: var(--yellow-color);
+}
+
+#button{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+    gap: 5px;
+}

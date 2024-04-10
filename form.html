@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+    <form name="Form" id="Form" action="">
+      <fieldset>
+        <legend>Formulaire:</legend>
+        <div>
+          <div id="formulaire-div">
+            <label for="input_type_lname">Nom<span>*</span></label>
+            <input
+              placeholder="Votre nom"
+              type="text"
+              id="input_type_lname"
+              name="Name"
+            />
+            <span class="error" id="error_name"></span>
+
+            <label for="input_type_fname">Prénom</label>
+            <input
+              placeholder="Votre prénom"
+              type="text"
+              id="input_type_fname"
+              name="Prenom"
+            />
+
+            <label for="input_type_email">Mail<span>*</span></label>
+            <input
+              type="email"
+              placeholder="Votre email"
+              id="input_type_email"
+              name="Email"
+            />
+            <span class="error" id="error_mail"></span>
+
+            <label for="input_type_date">Date</label>
+            <input type="date" id="input_type_date" name="Date" />
+
+            <label for="input_type_password">Mot de passe<span>*</span></label>
+            <input
+              onmouseover="showPassword()"
+              onmouseout="dontshowPassword()"
+              type="password"
+              id="input_type_password"
+              name="Password"
+              placeholder="Votre mot de passe"
+            />
+            <span class="error" id="error_password"></span>
+
+            <label for="input_type_password_verif"
+              >Confirmez le mot de passe<span>*</span></label
+            >
+            <input
+              onmouseover="showPasswordVerif()"
+              onmouseout="dontshowPasswordVerif()"
+              type="password"
+              id="input_type_password_verif"
+              name="Verif_Password"
+              placeholder="Votre mot de passe"
+            />
+            <span class="error" id="error_password_verif"></span>
+          </div>
+          <div id="button">
+            <input class="button" type="submit" value="Envoyer" />
+            <input
+              class="button"
+              onclick="delete_error()"
+              type="reset"
+              value="Réinitialiser"
+            />
+          </div>
+
+          <p><span>*</span>Obligatoire</p>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
